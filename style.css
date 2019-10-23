@@ -6,6 +6,8 @@ html, body {
 div.container {
   display: grid;
   grid-template-columns: 20% 70% 10%;
+  grid-template-areas: "imgLogo search sign";
+  grid-gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -93,12 +95,13 @@ nav li a:hover {
 }
 .container__hero .container__hero--details h5 {
   margin: 0px;
+  margin-bottom: 10px;
   font-size: 42px;
 }
 
 .products {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(0px, 407px));
   justify-content: center;
   grid-gap: 10px;
   padding: 20px;
@@ -143,6 +146,7 @@ nav li a:hover {
   margin: 0px;
   border: 0;
   text-transform: uppercase;
+  width: 40%;
 }
 
 .subscribeBtnShow {
@@ -180,12 +184,12 @@ nav li a:hover {
   align-items: center;
   padding-bottom: 0;
   justify-content: space-between;
-  height: 80px;
 }
 .footer__container .footer__category ul {
   display: flex;
   flex-wrap: wrap;
   padding: 0px;
+  justify-content: space-evenly;
 }
 .footer__container .footer__category ul li {
   padding-left: 50px;
@@ -204,22 +208,22 @@ nav li a:hover {
 .footer__container .footer__form {
   grid-area: form;
   padding: 20px;
-  position: relative;
 }
 .footer__container .footer__form strong {
   color: white;
 }
 .footer__container .footer__form .footer__form-email {
-  position: absolute;
-  margin-top: 5px;
+  margin-top: 15px;
   background-color: white;
   display: flex;
+  margin-right: 10px;
 }
 
 .input2 {
   outline: 0 none;
   padding: 5px;
   border: 0;
+  width: 60%;
 }
 
 .register__container {
@@ -317,6 +321,57 @@ nav li a:hover {
 }
 .login__container .login__container-form .createAccount a:hover {
   color: black;
+}
+
+h2.tendencias {
+  margin-left: 50px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__container {
+    grid-template-columns: 100%;
+    grid-template-areas: "logo" "form" "category";
+  }
+
+  div.container {
+    grid-template-columns: 100%;
+    grid-template-areas: "imgLogo" "search" "sign";
+  }
+
+  nav ul {
+    display: block;
+  }
+  nav li {
+    padding: 10px;
+  }
+
+  .container__hero .container__hero--details {
+    display: block;
+    width: 90%;
+  }
+
+  .footer__container .footer__logo {
+    margin: 0 auto;
+  }
+  .footer__container .footer__form {
+    margin: 0 auto;
+  }
+  .footer__container .footer__category {
+    margin: 0 auto;
+  }
+
+  .footer__container .footer__logo img {
+    margin-left: 0;
+  }
+
+  .subscribeBtn {
+    width: 80%;
+  }
+
+  .input2 {
+    width: 20%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
