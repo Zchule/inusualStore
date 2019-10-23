@@ -391,6 +391,14 @@ h2.tendencias {
   font-size: 28px;
 }
 
+.container__categories {
+  height: 270px;
+  background-color: aliceblue;
+}
+.container__categories .container__categories--details {
+  color: black;
+}
+
 @media screen and (max-width: 768px) {
   .footer__container {
     grid-template-columns: 100%;

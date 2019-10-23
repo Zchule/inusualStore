@@ -441,6 +441,16 @@ h2.tendencias {
   }
 }
 
+// home-categories
+.container__categories {
+  height: 270px;
+  background-color: aliceblue;
+
+  .container__categories--details {
+    color: black;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   .footer__container {
