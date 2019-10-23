@@ -451,6 +451,21 @@ h2.tendencias {
   }
 }
 
+// inventario
+
+table {
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+}
+
+.egt td {
+  padding: .2em .8em;
+  border: 1px solid rgba(16,76,167,0.25);
+  background: rgba(90,156,255,0.25);
+  text-align: left;
+}
 
 @media screen and (max-width: 768px) {
   .footer__container {
