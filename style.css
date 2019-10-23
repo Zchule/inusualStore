@@ -106,11 +106,17 @@ nav li a:hover {
   grid-gap: 10px;
   padding: 20px;
 }
-.products .product__image img {
+.products .product__image .product__image--details {
+  width: inherit;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+.products .product__image .product__image--details img {
   margin: 0px;
   width: 100%;
   vertical-align: top;
-  height: 200px;
+  height: auto;
 }
 
 .subscribe {
@@ -146,7 +152,7 @@ nav li a:hover {
   margin: 0px;
   border: 0;
   text-transform: uppercase;
-  width: 40%;
+  width: 45%;
 }
 
 .subscribeBtnShow {
@@ -162,6 +168,7 @@ nav li a:hover {
 }
 
 .footer__container {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 20% 50% 30%;
   grid-template-areas: "logo category form";
@@ -354,15 +361,14 @@ h2.tendencias {
   .footer__container .footer__logo {
     margin: 0 auto;
   }
+  .footer__container .footer__logo img {
+    margin: 0;
+  }
   .footer__container .footer__form {
     margin: 0 auto;
   }
   .footer__container .footer__category {
     margin: 0 auto;
-  }
-
-  .footer__container .footer__logo img {
-    margin-left: 0;
   }
 
   .subscribeBtn {

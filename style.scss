@@ -120,13 +120,20 @@ nav {
   padding: 20px;
 
   .product__image {
-    img {
-      margin: 0px;
-      width: 100%;
-      vertical-align: top;
-      height: 200px;
-    }
 
+    .product__image--details {
+      width: inherit;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+
+      img {
+        margin: 0px;
+        width: 100%;
+        vertical-align: top;
+        height: auto;
+      }
+    }
   }
   
 }
@@ -165,7 +172,7 @@ nav {
   margin: 0px;
   border: 0;
   text-transform: uppercase;
-  width: 40%;
+  width: 45%;
 }
 
 .subscribeBtnShow {
@@ -181,6 +188,7 @@ nav {
 }
 
 .footer__container {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: 20% 50% 30%;
   grid-template-areas: "logo category form";
@@ -401,20 +409,15 @@ h2.tendencias {
   .footer__container {
     .footer__logo{
       margin: 0 auto;
+      img {
+        margin: 0;
+      }
     }
     .footer__form {
       margin: 0 auto;
     }
     .footer__category {
       margin: 0 auto;
-    }
-  }
-
-  .footer__container {
-    .footer__logo {
-      img {
-        margin-left: 0;
-      }
     }
   }
 
