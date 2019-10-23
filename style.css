@@ -335,6 +335,24 @@ h2.tendencias {
   margin-bottom: 0px;
 }
 
+.container__categories--details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.container__categories--details h1 {
+  margin: 0px;
+  margin-top: 50px;
+  font-size: 70px;
+}
+.container__categories--details h5 {
+  margin: 0px;
+  margin-bottom: 10px;
+  font-size: 42px;
+}
+
 @media screen and (max-width: 768px) {
   .footer__container {
     grid-template-columns: 100%;
