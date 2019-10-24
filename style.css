@@ -234,10 +234,10 @@ nav li a:hover {
 }
 
 .register__container {
-  height: 100vh;
+  height: 100%;
+  margin-top: 20px;
 }
 .register__container .register__container--form {
-  position: relative;
   box-shadow: 1px 1px 7px 1px #888888;
   width: 35%;
   margin: 0 auto;
@@ -245,9 +245,11 @@ nav li a:hover {
   padding: 40px 10px;
   border-radius: 41px;
   color: black;
+  height: 100%;
   font-family: "Playfair Display", serif;
 }
 .register__container .register__container--form .form {
+  position: relative;
   display: flex;
   padding: 10px;
 }
@@ -262,6 +264,7 @@ nav li a:hover {
 }
 .register__container .register__container--form .form__password {
   display: flex;
+  position: relative;
 }
 .register__container .register__container--form .form__password h4 {
   margin: 10px;
@@ -411,6 +414,11 @@ table {
   border: 1px solid rgba(16, 76, 167, 0.25);
   background: rgba(90, 156, 255, 0.25);
   text-align: left;
+}
+
+.registerProduct {
+  color: #2FD5F5;
+  margin: 5px 20px;
 }
 
 @media screen and (max-width: 768px) {
